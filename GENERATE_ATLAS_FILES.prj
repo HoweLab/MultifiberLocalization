@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1759808874" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\GENERATE_ATLAS_FILES.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="GENERATE_ATLAS_FILES" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2678001698" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\GENERATE_ATLAS_FILES.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="GENERATE_ATLAS_FILES" target="target.mlapps" target-name="Package App">
     <param.appname>GENERATE_ATLAS_FILES</param.appname>
     <param.authnamewatermark>Mai-Anh Vu</param.authnamewatermark>
     <param.email />
