@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE namedpointset [
+  <!ELEMENT namedpointset (pointworld*)>
+  <!ELEMENT pointworld EMPTY>
+  <!ATTLIST namedpointset version CDATA #REQUIRED>
+  <!ATTLIST pointworld set (true|false) #REQUIRED>
+  <!ATTLIST pointworld name CDATA #REQUIRED>
+  <!ATTLIST pointworld x CDATA #IMPLIED>
+  <!ATTLIST pointworld y CDATA #IMPLIED>
+  <!ATTLIST pointworld z CDATA #IMPLIED>
+]>
+
+<namedpointset version="1.0">
+  <pointworld set="true" name="AC" x="569.5" y="520" z="532"/>
+  <pointworld set="true" name="ACL" x="466" y="537" z="506"/>
+  <pointworld set="true" name="ACR" x="674" y="536" z="506"/>
+  <pointworld set="true" name="CCM" x="569.5" y="227" z="652"/>
+  <pointworld set="true" name="CCML" x="70" y="435" z="651"/>
+  <pointworld set="true" name="CCMR" x="1070" y="449" z="652"/>
+  <pointworld set="true" name="FL2" x="517" y="380" z="424"/>
+  <pointworld set="true" name="FM1" x="569.5" y="373" z="424"/>
+  <pointworld set="true" name="FR2" x="624" y="380" z="424"/>
+  <pointworld set="true" name="HM1" x="569.5" y="245" z="774"/>
+  <pointworld set="true" name="IP" x="569.5" y="588" z="864"/>
+  <pointworld set="true" name="IPL" x="523" y="561" z="865"/>
+  <pointworld set="true" name="IPR" x="615" y="562" z="865"/>
+  <pointworld set="true" name="KM" x="569.5" y="80" z="846"/>
+  <pointworld set="true" name="PM" x="569.5" y="614" z="900"/>
+  <pointworld set="true" name="VM1" x="569.5" y="438" z="555"/>
+  <pointworld set="true" name="VM1L" x="91" y="439" z="555"/>
+  <pointworld set="true" name="VM1R" x="1048" y="439" z="555"/>
+</namedpointset>

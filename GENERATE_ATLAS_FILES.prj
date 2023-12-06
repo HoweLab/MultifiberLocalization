@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2465957897" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\GENERATE_ATLAS_FILES.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="GENERATE_ATLAS_FILES" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1803063258" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\GENERATE_ATLAS_FILES.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="GENERATE_ATLAS_FILES" target="target.mlapps" target-name="Package App">
     <param.appname>GENERATE_ATLAS_FILES</param.appname>
     <param.authnamewatermark>Mai-Anh Vu</param.authnamewatermark>
     <param.email />
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>generate atlas files necessary for th multifiber localization pipeline from the Allen Mouse Brain CCF atlas and Kim Lab atlas</param.summary>
     <param.description>Please see the readme for the MultifiberLocalization repository for instructions on which files to download: (https://github.com/HoweLab/MultifiberLocalization)</param.description>
-    <param.screenshot>C:\Users\maianhvu\AppData\Local\Temp\tp8eecf21a_671f_4962_926a_0c4f6d54b715.png</param.screenshot>
+    <param.screenshot />
     <param.version>1.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -29,6 +29,7 @@
       <param.email />
       <param.icon />
       <param.icons />
+      <param.screenshot />
       <param.version />
       <param.platforms />
       <param.output />
@@ -36,12 +37,10 @@
     <fileset.main>
       <file>${PROJECT_ROOT}\GENERATE_ATLAS_FILES.mlapp</file>
     </fileset.main>
-    <fileset.depfun>
-      <file>${MATLAB_ROOT}\toolbox\matlab\demos\landOcean.jpg</file>
-    </fileset.depfun>
+    <fileset.depfun />
     <fileset.resources>
-      <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\Fast_Tiff_Write</file>
       <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\OtherCode\bfmatlab</file>
+      <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\OtherCode\Fast_Tiff_Write\Fast_BigTiff_Write.m</file>
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
