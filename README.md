@@ -34,7 +34,7 @@ Each of these steps is packaged in a MATLAB App. There are 2 ways to run each of
 
 
 ## 1) GENERATE_ATLAS_FILES 
-This only needs to be run once to generate the atlas files necessary. You will end up with the following files in this repository folder (note that the double dots .. means one folder above this one):
+This only needs to be run once to generate the atlas files necessary. Be sure you have atlas files downloaded first. You will end up with the following files in this repository folder (note that the double dots .. means one folder above this one):
   * ../MRIAtlas/CCF/average_template_10_coronal.tif
   * ../MRIAtlas/CCF/annotation_10_coronal.tif
   * ../MRIAtlas/Chon/Chon_CCF_coronal.tif
