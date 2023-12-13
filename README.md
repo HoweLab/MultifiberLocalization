@@ -35,13 +35,13 @@ Each of these steps is packaged in a MATLAB App. There are 2 ways to run each of
 
 ## 1) GENERATE_ATLAS_FILES 
 This only needs to be run once to generate the atlas files necessary. Be sure you have atlas files (see above) downloaded first. You will end up with the following files in this repository folder (note that the double dots .. means one folder above this one):
-  * ../MRIAtlas/CCF/average_template_10_coronal.tif -- the atlas
-  * ../MRIAtlas/CCF/annotation_10_coronal.tif -- the annotated/labeled atlas
-  * ../MRIAtlas/CCF/ccf_key.mat -- key containing the annotation labels and other information
-  * ../MRIAtlas/CCF/landmarks.points -- the reference landmarks for registration
-  * ../MRIAtlas/Chon/Chon_CCF_coronal.tif -- the atlas
-  * ../MRIAtlas/Chon/Chon_labels_coronal.tif -- the annotated/labeled atlas
-  * ../MRIAtlas/Chon/chon_key.mat -- key containing the annotation labels and other information
+  * **../MRIAtlas/CCF/average_template_10_coronal.tif** -- the atlas
+  * **../MRIAtlas/CCF/annotation_10_coronal.tif** -- the annotated/labeled atlas
+  * **../MRIAtlas/CCF/ccf_key.mat** -- key containing the annotation labels and other information
+  * **../MRIAtlas/CCF/landmarks.points** -- the reference landmarks for registration
+  * **../MRIAtlas/Chon/Chon_CCF_coronal.tif** -- the atlas
+  * **../MRIAtlas/Chon/Chon_labels_coronal.tif** -- the annotated/labeled atlas
+  * **../MRIAtlas/Chon/chon_key.mat** -- key containing the annotation labels and other information
 
 
 ![image](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/3df9f697-58bc-45a8-b0d8-6db47faddd33)
