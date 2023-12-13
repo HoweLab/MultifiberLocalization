@@ -72,6 +72,8 @@ The apps in this repository make use of the following repositories/tools. These 
 * [Fast_Tiff_Write](https://github.com/rharkes/Fast_Tiff_Write)
 * [Bio-Formats](https://bio-formats.readthedocs.io/en/v7.0.1/users/matlab/index.html)
 * [MATLAB Image Processing Toolbox](https://www.mathworks.com/products/image.html)
+* [MATLAB Statistics and Machine Learning Toolbox](https://www.mathworks.com/products/statistics.html)
+* [sec2hms](https://www.mathworks.com/matlabcentral/fileexchange/22817-seconds-to-hours-minutes-seconds)
 
 
 ## Other
