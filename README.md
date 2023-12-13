@@ -15,6 +15,7 @@ https://imagej.net/software/fiji/
 
 
 
+
 ## Atlases: 
 Download the appropriate files to generate the files needed for this pipeline:
 1. Allen Mouse Brain CCF ([Wang et al., 2020](https://pubmed.ncbi.nlm.nih.gov/32386544/)):    
@@ -50,6 +51,9 @@ This only needs to be run once to generate the atlas files necessary. Be sure yo
 
 ## 2) REGISTER_CT_TO_ATLAS
 Register a 3D CT image to the atlas.
+
+![Screenshot 2023-12-05 223813](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/bddbd2f2-7963-4387-bc5f-e52c19f6bb28)
+
 
 
 ## 3) LOCALIZE_FIBERS
