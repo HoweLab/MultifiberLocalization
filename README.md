@@ -37,8 +37,11 @@ Each of these steps is packaged in a MATLAB App. There are 2 ways to run each of
 This only needs to be run once to generate the atlas files necessary. Be sure you have atlas files (see above) downloaded first. You will end up with the following files in this repository folder (note that the double dots .. means one folder above this one):
   * ../MRIAtlas/CCF/average_template_10_coronal.tif
   * ../MRIAtlas/CCF/annotation_10_coronal.tif
+  * ../MRIAtlas/CCF/ccf_key.mat
+  * ../MRIAtlas/CCF/landmarks.points
   * ../MRIAtlas/Chon/Chon_CCF_coronal.tif
   * ../MRIAtlas/Chon/Chon_labels_coronal.tif
+  * ../MRIAtlas/Chon/chon_key.mat
 
 
 ![image](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/3df9f697-58bc-45a8-b0d8-6db47faddd33)
