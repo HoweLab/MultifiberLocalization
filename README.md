@@ -50,7 +50,7 @@ This only needs to be run once to generate the atlas files necessary. Be sure yo
 
 
 ## 2) REGISTER_CT_TO_ATLAS
-Register a 3D CT image to the atlas.
+Register a 3D CT image to the atlas. See REGISTER_CT_README.pdf for instructions and more info.
 
 ![Screenshot 2023-12-05 223813](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/bddbd2f2-7963-4387-bc5f-e52c19f6bb28)
 
