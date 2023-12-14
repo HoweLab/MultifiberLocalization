@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1803063258" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\GENERATE_ATLAS_FILES.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="GENERATE_ATLAS_FILES" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3624597867" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\GENERATE_ATLAS_FILES.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="GENERATE_ATLAS_FILES" target="target.mlapps" target-name="Package App">
     <param.appname>GENERATE_ATLAS_FILES</param.appname>
     <param.authnamewatermark>Mai-Anh Vu</param.authnamewatermark>
     <param.email />
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>generate atlas files necessary for th multifiber localization pipeline from the Allen Mouse Brain CCF atlas and Kim Lab atlas</param.summary>
     <param.description>Please see the readme for the MultifiberLocalization repository for instructions on which files to download: (https://github.com/HoweLab/MultifiberLocalization)</param.description>
-    <param.screenshot />
+    <param.screenshot>C:\Users\maianhvu\AppData\Local\Temp\tpbd259b92_6cf7_469a_a730_7e680fae0ad0.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
@@ -29,7 +29,6 @@
       <param.email />
       <param.icon />
       <param.icons />
-      <param.screenshot />
       <param.version />
       <param.platforms />
       <param.output />
@@ -39,6 +38,9 @@
     </fileset.main>
     <fileset.depfun />
     <fileset.resources>
+      <file>${PROJECT_ROOT}\ccf_key.mat</file>
+      <file>${PROJECT_ROOT}\chon_key.mat</file>
+      <file>${PROJECT_ROOT}\landmarks.points</file>
       <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\OtherCode\bfmatlab</file>
       <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\OtherCode\Fast_Tiff_Write\Fast_BigTiff_Write.m</file>
     </fileset.resources>

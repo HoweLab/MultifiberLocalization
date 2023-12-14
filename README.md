@@ -36,28 +36,29 @@ Each of these steps is packaged in a MATLAB App. There are 2 ways to run each of
 
 ## 1) GENERATE_ATLAS_FILES 
 This only needs to be run once to generate the atlas files necessary. Be sure you have atlas files (see above) downloaded first. You will end up with the following files in this repository folder (note that the double dots .. means one folder above this one):
-  * **../MRIAtlas/CCF/average_template_10_coronal.tif** -- the atlas
-  * **../MRIAtlas/CCF/annotation_10_coronal.tif** -- the annotated/labeled atlas
-  * **../MRIAtlas/CCF/ccf_key.mat** -- key containing the annotation labels and other information
-  * **../MRIAtlas/CCF/landmarks.points** -- the reference landmarks for registration
-  * **../MRIAtlas/Chon/Chon_CCF_coronal.tif** -- the atlas
-  * **../MRIAtlas/Chon/Chon_labels_coronal.tif** -- the annotated/labeled atlas
-  * **../MRIAtlas/Chon/chon_key.mat** -- key containing the annotation labels and other information
+  * **specified_atlas_location_path/MRIAtlas/CCF/average_template_10_coronal.tif** -- the atlas
+  * **specified_atlas_location_path/MRIAtlas/CCF/annotation_10_coronal.tif** -- the annotated/labeled atlas
+  * **specified_atlas_location_path/MRIAtlas/CCF/ccf_key.mat** -- key containing the annotation labels and other information
+  * **specified_atlas_location_path/MRIAtlas/CCF/landmarks.points** -- the reference landmarks for registration
+  * **specified_atlas_location_path/MRIAtlas/Chon/Chon_CCF_coronal.tif** -- the atlas
+  * **specified_atlas_location_path/MRIAtlas/Chon/Chon_labels_coronal.tif** -- the annotated/labeled atlas
+  * **specified_atlas_location_path/MRIAtlas/Chon/chon_key.mat** -- key containing the annotation labels and other information
+
+![Screenshot 2023-12-19 145228](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/1577bf6e-5e1f-4d1b-9298-072ae3d33b83)
 
 
-![image](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/3df9f697-58bc-45a8-b0d8-6db47faddd33)
 
 
-
-## 2) REGISTER_CT_TO_ATLAS
+## 2) REGISTER_CT
 Register a 3D CT image to the atlas. See REGISTER_CT_README.pdf for instructions and more info.
 
-![Screenshot 2023-12-05 223813](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/bddbd2f2-7963-4387-bc5f-e52c19f6bb28)
+![Screenshot 2023-12-19 151755](https://github.com/HoweLab/MultifiberLocalization/assets/21954946/1b18f51e-1816-43cf-a951-e9cd76d53725)
+
 
 
 
 ## 3) LOCALIZE_FIBERS
-Localize the fibers in a registered CT image.
+Localize the fibers in a registered CT image. [*currently in progress*]
    
 
 

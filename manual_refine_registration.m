@@ -22,7 +22,7 @@ function varargout = manual_refine_registration(varargin)
 
 % Edit the above text to modify the response to help manual_refine_registration
 
-% Last Modified by GUIDE v2.5 05-Aug-2022 10:20:12
+% Last Modified by GUIDE v2.5 19-Dec-2023 15:02:34
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -108,6 +108,39 @@ function datapath_button_Callback(hObject, eventdata, handles)
 set(handles.datapath,'String',[pathname filename])
 
 
+
+
+% --- Executes on button press in atlaspath_button.
+function atlaspath_button_Callback(hObject, eventdata, handles)
+% hObject    handle to atlaspath_button (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+pathname = uigetdir;
+set(handles.atlaspath,'String',pathname);
+
+
+function atlaspath_Callback(hObject, eventdata, handles)
+% hObject    handle to atlaspath (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of atlaspath as text
+%        str2double(get(hObject,'String')) returns contents of atlaspath as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function atlaspath_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to atlaspath (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%% INITIALIZE %%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -133,8 +166,7 @@ end
 % once we've verified both files exist
 disp(['loading atlas and ' datapath])    
 % load atlas & note size
-MRIdir = strsplit(fileparts(mfilename('fullpath')),filesep);
-MRIdir = fullfile(strjoin(MRIdir(1:end-1),filesep),'MRIAtlas');
+MRIdir = get(handles.atlaspath,'String');
 % record some useful information
 tmp.atlas = load_tiffs_fast(fullfile(MRIdir,'CCF','average_template_10_coronal.tif'));
 tmp.slice_limits = containers.Map({'coronal','axial','sagittal'},...
@@ -164,6 +196,8 @@ set(handles.slice_number,'String',num2str(round(tmp.slice_limits('coronal')/2)))
 % update GUI: turn off things
 set(handles.datapath_button,'Enable','off')
 set(handles.datapath,'Enable','off')
+set(handles.atlaspath_button,'Enable','off')
+set(handles.atlaspath,'Enable','off')
 set(handles.ok,'Enable','off')
 % update GUI: turn on things
 set(handles.coronal,'Enable','on')
@@ -706,5 +740,6 @@ function quit_Callback(hObject, eventdata, handles)
 disp('quitting (no save) ...')
 close(gcbf) % close GUI
 clear global tmp   % clear our global tmp variable
+
 
 

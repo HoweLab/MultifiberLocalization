@@ -1,13 +1,13 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2275935585" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\REGISTER_CT.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="REGISTER_CT" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="543742690" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\REGISTER_CT.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="REGISTER_CT" target="target.mlapps" target-name="Package App">
     <param.appname>REGISTER_CT</param.appname>
-    <param.authnamewatermark />
+    <param.authnamewatermark>Mai-Anh Vu</param.authnamewatermark>
     <param.email />
-    <param.company />
+    <param.company>Boston University</param.company>
     <param.icon />
     <param.icons />
-    <param.summary />
-    <param.description />
+    <param.summary>register CT to the Allen Mouse Brain CCF Atlas</param.summary>
+    <param.description>Please see the readme for the MultifiberLocalization repository for instructions on which files to download</param.description>
     <param.screenshot>C:\Users\maianhvu\AppData\Local\Temp\tp71b1699a_e7bd_4698_928f_ee3dc850da9c.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name>
@@ -29,13 +29,9 @@
     <param.output>${PROJECT_ROOT}</param.output>
     <param.guid>2142cf6d-219d-422f-b56e-1c32235cd8eb</param.guid>
     <unset>
-      <param.authnamewatermark />
       <param.email />
-      <param.company />
       <param.icon />
       <param.icons />
-      <param.summary />
-      <param.description />
       <param.version />
       <param.platforms />
       <param.output />

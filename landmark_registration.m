@@ -1,4 +1,4 @@
-% function landmark_registration(ct_path,ct_landmarks_path,varargin)
+% function landmark_registration(ct_path,ct_landmarks_path,atlas_dir, varargin)
 %
 % This function aligns the CT to the Allen Brain Institute CCF Atlas based
 % on landmarks as referenced, marked, and detailed in the
@@ -15,6 +15,7 @@
 % ct_landmarks_path - the path to the .points file that has the landmarks
 %                     you  identified using the FIJI plugin: Name Landmarks
 %                     and Register
+% atlas_dir         - the location of the MRIAtlas folder
 %
 % optional inputs:
 % output_name       - if left blank, the output name will be the same as
@@ -71,8 +72,9 @@
 % updated 9/2/2022: to make use of Fast_Tiff_Write if available
 % updated 12/15/2022: to allow input of output name, as well as two
 %   different approaches
+% updated 12/19/2023: input atlas location
 
-function landmark_registration(ct_path,ct_landmarks_path,varargin)
+function landmark_registration(ct_path,ct_landmarks_path,atlas_dir, varargin)
 
 %%%  parse optional inputs %%%
 ip = inputParser;
@@ -95,12 +97,10 @@ warning('off','imageio:tifftagsread:expectedTagDataFormatMultiple')
 
 %%% load things
 % CCF
-MRIdir = strsplit(fileparts(mfilename('fullpath')),filesep);
-MRIdir = fullfile(strjoin(MRIdir(1:end-1),filesep),'MRIAtlas');
-atlas_landmarks = load_fiji_landmarks(fullfile(MRIdir,'CCF','landmarks.points'));
-key = load(fullfile(MRIdir,'CCF','ccf_key.mat'),'landmark_notes');
+atlas_landmarks = load_fiji_landmarks(fullfile(atlas_dir,'CCF','landmarks.points'));
+key = load(fullfile(atlas_dir,'CCF','ccf_key.mat'),'landmark_notes');
 key = key.landmark_notes;
-tmp = imfinfo(fullfile(MRIdir,'CCF','average_template_10_coronal.tif'));
+tmp = imfinfo(fullfile(atlas_dir,'CCF','average_template_10_coronal.tif'));
 atlas_info = tmp(1);
 atlas_info.Depth = numel(tmp);
 atlas_midsag_ref2d = imref2d([atlas_info.Height,atlas_info.Depth],1,1); % midsag
@@ -130,7 +130,7 @@ lat_landmarks_all = key.name(key.ML_extent==1);
 lat_ct = ct_landmarks(lat_ct,:);
 [~,lat_atlas,~] = intersect(atlas_landmarks.name,lat_landmarks_all);
 lat_atlas = atlas_landmarks(lat_atlas,:);
-atlas_midsag_plane = imfinfo(fullfile(MRIdir,'CCF','average_template_10_coronal.tif'));
+atlas_midsag_plane = imfinfo(fullfile(atlas_dir,'CCF','average_template_10_coronal.tif'));
 atlas_midsag_plane = atlas_midsag_plane(1).Width/2+.5;
 % only keep the ones in common
 [~,lat_ct_idx,lat_atlas_idx] = intersect(lat_ct.name,lat_atlas.name);
