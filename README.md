@@ -61,7 +61,11 @@ Localize the fibers in a registered CT image.
    
 
 
-
+## Other useful functions included:
+1. **atlas_labels.m**
+   * This function takes as input a m x 3 matrix of coordinates (mm from bregma) or indices (in atlas matrix space) in the order AP-ML-DV, where each row is a different point. It returns the anatomical labels assigned to the point by the Allen Mouse Brain CCF Atlas and the Kim Lab Atlas. Open the function or type 'help atlas_labels' for more info.
+   * example: output = atlas_labels('coord', [0.8, 2.3, -3.4; 0.5, 2, -2]);
+   * example: output = atlas_labels('idx', [445 800 413; 475 770 254]);
   
 # References   
 
