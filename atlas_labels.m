@@ -3,8 +3,8 @@
 % This function returns atlas labels for a set of coordinates or atlas 
 % indices. For example,
 %
-%   atlas_labels('coord',[1.3, 2.3, -3.4]);
-%   atlas_labels('idx',[400 400 500])
+%       output = atlas_labels('coord',[0.8, 2.3, -3.4; 0.5, 2, -2]);
+%       output = atlas_labels('idx',[445 800 413; 475 770 254]);
 %
 % Note that input coord or idx can have multiple rows, where each row is a
 % point.
@@ -58,6 +58,7 @@
 
 function output = atlas_labels(varargin)
 
+% input parser
 ip = inputParser;
 ip.addParameter('coord',[]);
 ip.addParameter('idx',[]);
@@ -65,6 +66,12 @@ ip.parse(varargin{:});
 for j=fields(ip.Results)'
     eval([j{1} '=ip.Results.' j{1} ';']);
 end
+
+% turn off some warnings
+warning('off','imageio:tiffmexutils:libtiffWarning')
+warning('off','imageio:tiffmexutils:libtiffErrorAsWarning')
+warning('off','imageio:tifftagsread:expectedTagDataFormatMultiple')
+
 
 % MRI Atlas Stuff
 mridir = strsplit(fileparts(mfilename('fullpath')),filesep);
