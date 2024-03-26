@@ -1,5 +1,5 @@
 # MultifiberLocalization
-MATLAB code to register CT scans to the Allen Mouse Brain CCF Atlas, and to localize multifiber photometry fibers. This code was written and developed in MATLAB2020b. See [Vu et al., 2023](https://www.biorxiv.org/content/10.1101/2023.11.17.567425v1).
+MATLAB code to register CT scans to the Allen Mouse Brain CCF Atlas, and to localize multifiber photometry fibers. This code was written and developed in MATLAB2020b. See [Vu et al., 2024](https://www.sciencedirect.com/science/article/pii/S0896627323009704?via%3Dihub).
 
 
 Update 11/21/23: This repository is currently in progress and the code will be available shortly.
