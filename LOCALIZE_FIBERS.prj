@@ -1,0 +1,117 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2574840957" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\LOCALIZE_FIBERS.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="LOCALIZE_FIBERS" target="target.mlapps" target-name="Package App">
+    <param.appname>LOCALIZE_FIBERS</param.appname>
+    <param.authnamewatermark>Mai-Anh Vu</param.authnamewatermark>
+    <param.email>maianhvu@bu.edu</param.email>
+    <param.company>Boston University</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>fiber localization for multlifiber photometry</param.summary>
+    <param.description>this app is for semi-automated localization of fibers in multifiber photometry. see https://github.com/HoweLab/MultifiberLocalization for more details and information</param.description>
+    <param.screenshot>C:\Users\maianhvu\AppData\Local\Temp\tpcc6ec3d7_790a_4215_a59c_80b536b2d631.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+      <item>Image Processing Toolbox</item>
+      <item>Statistics and Machine Learning Toolbox</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+      <item>17</item>
+      <item>19</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.9</item>
+      <item>11.2</item>
+      <item>12.0</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>46b4dcdb-d3a1-40b8-b02f-cbc7cf62a07f</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\LOCALIZE_FIBERS.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources>
+      <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\CTProcessing\point_to_line\point_to_line_distance.m</file>
+      <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\CTProcessing\PolyfitnTools\polyfitn.m</file>
+      <file>C:\Users\maianhvu\Documents\MATLAB\Scripts\ImageProcessing\utils\secs2hms\secs2hms.m</file>
+      <file>${PROJECT_ROOT}\add_atlas_info_and_save.mlapp</file>
+      <file>${PROJECT_ROOT}\check_multifibers.mlapp</file>
+      <file>${PROJECT_ROOT}\fiber_area_ID.mlapp</file>
+      <file>${PROJECT_ROOT}\fiber_top_ID.mlapp</file>
+      <file>${PROJECT_ROOT}\fiber_top_refine_and_label.mlapp</file>
+      <file>${PROJECT_ROOT}\map_fiber_tips.m</file>
+      <file>${PROJECT_ROOT}\private\load_tiffs_fast.m</file>
+      <file>${PROJECT_ROOT}\verify_atlas_labels.mlapp</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\maianhvu\Documents\MATLAB\Scripts" name="MultifiberLocalization" optional="false">C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
