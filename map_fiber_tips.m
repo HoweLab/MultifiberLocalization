@@ -86,6 +86,9 @@ fiber_lists.fiber_multiple_tops = find(cellfun(@(x) numel(x)>1,fiber_topID));
 accounted_tops = [cell2mat(fiber_topID(fiber_lists.fiber_single_top));...
     cell2mat(fiber_topID(fiber_lists.fiber_multiple_tops))];
 [~,idx,~] = unique(accounted_tops);
+% save this in our table
+fiber_table.is_multifiber = zeros(size(fiber_table.top_ID));
+fiber_table.is_multifiber(ismember(fiber_table.bottom_ID,fiber_lists.fiber_multiple_tops)) = 1;
 
 % fibers that line up with no top (either non-fibers, or disconnected fibers)
 fiber_lists.fiber_no_top = find(cellfun(@isempty,fiber_topID));
