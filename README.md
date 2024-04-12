@@ -66,6 +66,8 @@ Localize the fibers in a registered CT image. See LOCALIZE_FIBERS_README.pdf for
    * This function takes as input a m x 3 matrix of coordinates (mm from bregma) or indices (in atlas matrix space) in the order AP-ML-DV, where each row is a different point. It returns the anatomical labels assigned to the point by the Allen Mouse Brain CCF Atlas and the Kim Lab Atlas. Open the function or type 'help atlas_labels' for more info.
    * example: output = atlas_labels('coord', [0.8, 2.3, -3.4; 0.5, 2, -2]);
    * example: output = atlas_labels('idx', [445 800 413; 475 770 254]);
+2. **howelab_table_labels.m**
+   * For members of the Howe Lab, this function takes as input the path to the localized_fibers.mat struct, the struct itself, or the table contained in the "fiber_table" field of the struct, and returns a struct with a single field "table" which contains the same information as the fiber_table field but with fieldnames compatiable with Howe Lab legacy code. 
   
 # References   
 
