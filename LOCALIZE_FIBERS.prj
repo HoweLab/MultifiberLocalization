@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="4219211530" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\LOCALIZE_FIBERS.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="LOCALIZE_FIBERS" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="789118908" file="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization\LOCALIZE_FIBERS.prj" location="C:\Users\maianhvu\Documents\MATLAB\Scripts\MultifiberLocalization" name="LOCALIZE_FIBERS" target="target.mlapps" target-name="Package App">
     <param.appname>LOCALIZE_FIBERS</param.appname>
     <param.authnamewatermark>Mai-Anh Vu</param.authnamewatermark>
     <param.email>maianhvu@bu.edu</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>fiber localization for multlifiber photometry</param.summary>
     <param.description>this app is for semi-automated localization of fibers in multifiber photometry. see https://github.com/HoweLab/MultifiberLocalization for more details and information</param.description>
-    <param.screenshot>C:\Users\maianhvu\AppData\Local\Temp\tp07691ac4_8038_455f_868b_939375e24869.png</param.screenshot>
+    <param.screenshot>C:\Users\maianhvu\AppData\Local\Temp\tp9d2c8d97_7e62_4768_98fb_c76a229f6388.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name>
       <item>MATLAB</item>
