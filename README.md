@@ -89,3 +89,19 @@ The apps in this repository make use of the following repositories/tools. These 
     * Chon/chon_key.mat
   * Note that this repository also contains the very useful tool for Slice Histology Alignment, Registration, and Probe Track analysis: SHARP-Track.
 
+------------------
+##  License and Citation
+ 
+If you use use this code in your research, please cite: 
+
+Vu MT, Brown EH, Wen MJ, Noggle CA, Zhang Z, Monk KJ, Bouabid S, Mroz L, Graham BM, Zhuo Y, Li Y, Otchy TM, Tian L, Davison IG, Boas DA, Howe MW. [Targeted micro-fiber arrays for measuring and manipulating localized multi-scale neural dynamics over large, deep brain volumes during behavior. Neuron. 2024 Mar 20;112(6):909-923.e9.](https://www.sciencedirect.com/science/article/pii/S0896627323009704?via%3Dihub).
+
+This repository is released under the [MIT License](https://opensource.org/license/mit) - see the [LICENSE](LICENSE) file for details.
+
+
+## Acknowledgements
+
+This research was funded in whole by Aligning Science Across Parkinson’s **(ASAP-020370)** through the Michael J. Fox Foundation for Parkinson’s Research (MJFF).
+  
+
+
